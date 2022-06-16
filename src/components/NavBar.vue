@@ -1,11 +1,11 @@
 <template>
   <nav>
-    <v-app-bar flat app left dark class="text-uppercase">
+    <v-app-bar flat app class="text-uppercase">
       <h1 class="brand"><i class="fas fa-clock mr-2"></i></h1>
       <h1 class="font-weight-light brand">World</h1>
       <h1 class="brand">Clock</h1>
       <v-spacer></v-spacer>
-      <v-btn depressed class="blue-grey d-none d-sm-flex">
+      <v-btn outlined class="nav-btn d-none d-sm-flex">
         <a
           class="nav-link"
           href="https://gent-2ithub.com/Marmik198"
@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style scoped>
+.v-app-bar {
+  background: #02083b !important;
+  color: white !important;
+}
+
 .nav-link {
   text-decoration: none;
   color: #fff;
@@ -39,5 +44,9 @@ export default {
 
 .brand {
   letter-spacing: 3px;
+}
+
+.nav-btn {
+  border-color: #fff !important;
 }
 </style>

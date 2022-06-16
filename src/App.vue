@@ -1,6 +1,15 @@
 <template>
   <v-app>
     <NavBar />
+
+    <v-main></v-main>
+
+    <v-footer app class="justify-center pt-4 pb-4">
+      <h3>&copy; Copyright -</h3>
+      <h3>
+        <a class="ml-2" href="https://github.com/Marmik198/"> Project Link</a>
+      </h3>
+    </v-footer>
   </v-app>
 </template>
 
@@ -32,8 +41,13 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.v-footer {
+  background: #02083b !important;
+  color: white !important;
+}
+
 .v-footer h3 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
