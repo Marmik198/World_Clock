@@ -2,8 +2,9 @@
   <v-app>
     <NavBar />
 
-    <v-main>
+    <v-main class="mainc">
       <SelectCountry @date-change="dateChange" />
+      <AnalogTime :selectedDate="selectedDate" />
       <DigitalTime :selectedDate="selectedDate" />
     </v-main>
 
@@ -21,6 +22,7 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import SelectCountry from "./components/SelectCountry.vue";
+import AnalogTime from "./components/AnalogTime.vue";
 import DigitalTime from "./components/DigitalTime.vue";
 
 export default {
@@ -29,6 +31,7 @@ export default {
   components: {
     NavBar,
     SelectCountry,
+    AnalogTime,
     DigitalTime,
   },
 
