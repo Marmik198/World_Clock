@@ -30,8 +30,6 @@ export default {
 
   beforeMount() {
     this.timer = setInterval(() => {
-      this.selectedDate.setSeconds(this.selectedDate.getSeconds() + 1);
-
       this.currentTime(this.selectedDate);
     }, 1000);
   },

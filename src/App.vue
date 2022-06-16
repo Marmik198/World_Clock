@@ -11,7 +11,11 @@
     <v-footer app class="justify-center pt-4 pb-4">
       <h3>
         &copy; Copyright -
-        <a class="ml-2" target="_blank" href="https://github.com/Marmik198/">
+        <a
+          class="ml-2"
+          target="_blank"
+          href="https://github.com/Marmik198/World_Clock"
+        >
           Project Link</a
         >
       </h3>
@@ -37,12 +41,22 @@ export default {
 
   data: () => ({
     selectedDate: new Date(),
+    timer: undefined,
   }),
 
   methods: {
     dateChange(date) {
       this.selectedDate = date;
     },
+  },
+  beforeMount() {
+    this.timer = setInterval(() => {
+      this.selectedDate.setSeconds(this.selectedDate.getSeconds() + 1);
+    }, 1000);
+  },
+
+  beforeUnmount() {
+    clearInterval(this.timer);
   },
 };
 </script>
@@ -57,6 +71,7 @@ export default {
 body {
   background: #fafafa;
   font-family: Roboto, sans-serif;
+  overflow: hidden;
 }
 
 .v-footer {

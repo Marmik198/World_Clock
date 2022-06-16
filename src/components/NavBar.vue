@@ -8,7 +8,7 @@
       <v-btn outlined class="nav-btn d-none d-sm-flex">
         <a
           class="nav-link"
-          href="https://gent-2ithub.com/Marmik198"
+          href="https://www.linkedin.com/in/marmik-shah19/"
           target="_blank"
         >
           <span>Marmik Shah</span>
