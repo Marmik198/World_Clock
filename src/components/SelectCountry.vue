@@ -33,11 +33,12 @@ export default {
     },
 
     async selectionChange(value) {
+      this.selectedCountry = value;
+
       this.cities.zones.forEach((city) => {
         if (city.countryName === value) value = city.zoneName;
       });
 
-      this.selectedCountry = value;
       let city = await myFetch(
         `https://api.timezonedb.com/v2.1/get-time-zone?key=${process.env.VUE_APP_API_SECRET}&format=json&by=zone&zone=${value}`
       );

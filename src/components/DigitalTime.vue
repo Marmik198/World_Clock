@@ -2,7 +2,7 @@
   <v-container mt-5>
     <v-row justify="center" align="center">
       <v-col cols="12" sm="4" align="center">
-        <h1 class="text-h3 font-weight-black">{{ time }}</h1>
+        <h1 class="text-h4 text-md-h3 font-weight-black">{{ time }}</h1>
       </v-col>
     </v-row>
   </v-container>
@@ -27,8 +27,11 @@ export default {
       this.time = getDigitalTime(date);
     },
   },
+
   beforeMount() {
     this.timer = setInterval(() => {
+      this.selectedDate.setSeconds(this.selectedDate.getSeconds() + 1);
+
       this.currentTime(this.selectedDate);
     }, 1000);
   },
