@@ -1,4 +1,4 @@
-# world-clock
+# World-Clock
 
 ## Project setup
 ```
