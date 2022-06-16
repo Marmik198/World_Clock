@@ -79,7 +79,7 @@ export default {
   background: url("../assets/clock.png");
   background-size: cover;
   margin: 0 auto;
-  border: 4px solid #02083b;
+  border: 8px solid #02083b;
   border-radius: 50%;
   box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
     inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
