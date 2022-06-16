@@ -7,7 +7,9 @@
     <v-footer app class="justify-center pt-4 pb-4">
       <h3>&copy; Copyright -</h3>
       <h3>
-        <a class="ml-2" href="https://github.com/Marmik198/"> Project Link</a>
+        <a class="ml-2" target="_blank" href="https://github.com/Marmik198/">
+          Project Link</a
+        >
       </h3>
     </v-footer>
   </v-app>
@@ -52,7 +54,6 @@ body {
 }
 
 .v-footer h3 a:hover {
-  text-decoration: none;
-  color: #2196f3;
+  text-decoration: underline;
 }
 </style>
